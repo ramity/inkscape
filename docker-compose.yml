@@ -1,0 +1,10 @@
+services:
+  inkscape:
+    build:
+      context: ./docker/inkscape
+      dockerfile: Dockerfile
+    container_name: inkscape
+    volumes:
+      - ./data:/data
+      - ./scripts:/scripts
+    image: inkscape
